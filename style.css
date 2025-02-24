@@ -43,6 +43,7 @@
 .navigator-container .button .btn-main, .navigator-container .button .btn-hot {
   border-radius: 600px;
   width: 150px;
+  text-decoration: none;
   color: #eee;
 }
 .navigator-container .button .btn-main, .navigator-container .button .btn-hot {

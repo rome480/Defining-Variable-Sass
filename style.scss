@@ -1,3 +1,4 @@
+@import "_mixin.scss";
 *{
     margin: 0;
     padding: 0;
@@ -24,10 +25,10 @@ $color-text-light: #eee;
             margin: 0 0 0 50px;    
         }
         a{
-            text-decoration: none;
-            color: $text-color;
+            @include style-link-text($text-color);
         }     
     }
+    
     .button{
         grid-row: 1/2;
         grid-column: 2/3;
@@ -40,13 +41,12 @@ $color-text-light: #eee;
             margin: 0 50px 0 0;
         }
         a{
-            text-decoration: none;
-            color: $text-color;
+           @include style-link-text($text-color);
         } 
         .btn-main, .btn-hot{
             border-radius: 600px;
             width: $width-button;
-            color: $color-text-light;
+            @include style-link-text($color-text-light);
             &{
                 background-color: $secondary-color;
             }
